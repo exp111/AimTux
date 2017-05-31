@@ -4,13 +4,14 @@ pAste is a fork of Aimtux/Antario with more features added.
 Aimtux is a fully featured internal hack for *CounterStrike : Global Offensive* written in C++.
 
 I will add my own features here and maybe add stuff from other forks as Antario was discontinued.
+
 If you find a bug or want to add something just make a pull request.
 
 ## Compiling
 
 **Note:** _Do NOT download or compile as the root user_
 
-#### Download the dependencies required to build Antario:
+#### Download the dependencies required to build pAste:
 
 __Ubuntu-Based / Debian:__
 ```bash
@@ -40,11 +41,11 @@ sudo emerge cmake dev-vcs/git gdb libsdl2 mesa
 #### Download Antario:
 
 ```bash
-git clone --recursive https://github.com/Wando1423/Antario
+git clone --recursive https://github.com/exp111/pAste
 ```
 
 ```bash
-cd Antario
+cd pAste
 ```
 
 
@@ -60,10 +61,10 @@ You can build easily with the included build script.
 
 First of all, make sure CSGO is open, it doesn't matter whether you're in game or not.
 
-Navigate to the directory where Antario was built if you haven't ready.
+Navigate to the directory where pAste was built if you haven't ready.
 
 ```bash
-cd Antario
+cd pAste
 ```
 
 Now, you can inject the hack with the `load` script
@@ -78,11 +79,11 @@ You should see a lot of text being printed out, most of which is not important,
 
 If the injection was successfull you'll see a message at the bottom saying `Successfully injected!`, however, if the message says `Injection failed`, then you've most likely done something wrong.
 
-Now, go back into csgo, if you're in the main menu of the game you should see the Antario banner in the top left.
+Now, go back into csgo, if you're in the main menu of the game you should see the pAste banner in the top left.
 
 ## Using the hack
 
-Now that Antario has been injected into the game, press <kbd>Insert</kbd> on your keyboard to open the hack menu (<kbd>ALT</kbd>+<kbd>I</kbd> if you're using a laptop).
+Now that pAste has been injected into the game, press <kbd>Insert</kbd> on your keyboard to open the hack menu (<kbd>ALT</kbd>+<kbd>I</kbd> if you're using a laptop).
 
 If you want to change skins, create and load configs or open the player list, you can find those buttons at the top of the screen.
 
@@ -94,13 +95,13 @@ If you wish to unload the hack from the game, you can do so by entering the comm
 ./uload
 ```
 
-## Updating Antario
+## Updating pAste
 
-We add and improve and fix things almost every day with Antario. We don't have a fixed release schedule, we just add things to it when they're ready. Because of this, Antario will need to update a lot.
+We add and improve and fix things almost every day with pAste. We don't have a fixed release schedule, we just add things to it when they're ready. Because of this, pAste will need to update a lot.
 
 If you don't update once a day then we recommend at LEAST update once a week, and ALWAYS update after a CSGO update, just to make sure we fix anything that's broken.
 
-We provide a script included in the Antario folder that updates Antario for you. To use it, just run:
+We provide a script included in the pAste folder that updates pAste for you. To use it, just run:
 
 ```bash
 ./update
@@ -114,25 +115,25 @@ And it will download and compile without any effort. Once it's done, happy hacki
 Configs are stored in a hidden directory in your home folder. Specifically 
 
 ```bash
-~/.config/Antario
+~/.config/pAste
 ```
 
 Each `config.json` is stored in a seperately named folder (The name you see in-game, in the config window). 
 
-To add a config, create a folder inside of the `~/.config/Antario` folder with a name of your choice, and paste the `config.json` inside of that folder.
+To add a config, create a folder inside of the `~/.config/pAste` folder with a name of your choice, and paste the `config.json` inside of that folder.
 
 To see hidden folders inside your home folder, press <kbd>CTRL</kbd>+<kbd>H</kbd> when using a file manager.
 
 ## Grenade Configs
 
 ```bash
-~/.config/AntarioGH
+~/.config/pAsteGH
 ```
 
 Each `config.json` is stored in the folder named after them map name.
 
-To add a config, copy the folder containing it to `~/.config/AntarioGH`
-## Contributing to Antario
+To add a config, copy the folder containing it to `~/.config/pAsteGH`
+## Contributing to pAste
 
 If you wish to contribute code to this opensource project, please keep some things mind before creating a *pull request*:
  - Make sure you're using the correct [code style](https://github.com/AimTuxOfficial/AimTux/wiki/Code-Style).
