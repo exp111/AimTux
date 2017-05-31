@@ -1,6 +1,6 @@
 #include "glhook.h"
 
-SDL_GLContext Antario_context = nullptr;
+SDL_GLContext pAste_context = nullptr;
 
 void SDL2::SwapWindow(SDL_Window* window)
 {
@@ -44,7 +44,7 @@ void SDL2::SwapWindow(SDL_Window* window)
 		io.Fonts->Build();
 	}
 
-	SDL_GL_MakeCurrent(window, Antario_context);
+	SDL_GL_MakeCurrent(window, pAste_context);
 
 	ImGui_ImplSdl_NewFrame(window);
 

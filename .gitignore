@@ -4,7 +4,7 @@
 .vs/
 .idea/
 cmake-build-debug
-Antario.cbp
+pAste.cbp
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake

@@ -7,12 +7,12 @@ if [ -z "$csgo_pid" ]; then
 fi
 
 if [ ! -d ".git" ]; then
-    /bin/echo "We have detected that you have downloaded antario-master.zip from the GitHub website. This is the WRONG way to download Antario. Please download Antario with the command 'git clone --recursive https://github.com/Wando1423/Antario'"
+    /bin/echo "We have detected that you have downloaded pAste-master.zip from the GitHub website. This is the WRONG way to download pAste. Please download pAste with the command 'git clone --recursive https://github.com/exp111/pAste.git'"
 fi
 
 #Credit: Aixxe @ aixxe.net
-if grep -q libAntario.so /proc/$csgo_pid/maps; then
-    /bin/echo -e "\e[33mAntario is already injected... Aborting...\e[0m"
+if grep -q libpAste.so /proc/$csgo_pid/maps; then
+    /bin/echo -e "\e[33mpAste is already injected... Aborting...\e[0m"
     exit
 fi
 

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(Antario)
+project(pAste)
 
 if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
     if (CMAKE_CXX_COMPILER_VERSION VERSION_LESS 5.2)
@@ -40,4 +40,4 @@ EXCLUDE_FILES_FROM_DIR_IN_LIST("${SOURCE_FILES}" "${CMAKE_SOURCE_DIR}/src/ImGUI/
 EXCLUDE_FILES_FROM_DIR_IN_LIST("${SOURCE_FILES}" "${CMAKE_SOURCE_DIR}/src/ImGUI/extra_fonts" FALSE)
 
 add_library(Antario SHARED ${SOURCE_FILES})
-target_link_libraries(Antario SDL2 GL dl)
+target_link_libraries(pAste SDL2 GL dl)

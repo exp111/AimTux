@@ -1,4 +1,4 @@
-#Antario clang-format
+#pAste clang-format
 BasedOnStyle: WebKit
 BreakBeforeBraces: Allman
 AllowShortIfStatementsOnASingleLine: false
