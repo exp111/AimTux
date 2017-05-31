@@ -1,8 +1,10 @@
-## What is Antario?
+## What is pAste?
 
-Antario is a fork of Aimtux with more features added. 
+pAste is a fork of Aimtux/Antario with more features added. 
 Aimtux is a fully featured internal hack for *CounterStrike : Global Offensive* written in C++.
 
+I will add my own features here and maybe add stuff from other forks as Antario was discontinued.
+If you find a bug or want to add something just make a pull request.
 
 ## Compiling
 
