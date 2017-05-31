@@ -8,9 +8,9 @@ void SDL2::SwapWindow(SDL_Window* window)
 
 	static SDL_GLContext original_context = SDL_GL_GetCurrentContext();
 
-	if (!Antario_context)
+	if (!pAste_context)
 	{
-		Antario_context = SDL_GL_CreateContext(window);
+		pAste_context = SDL_GL_CreateContext(window);
 		ImGui_ImplSdl_Init(window);
 
 		ImWchar RobotoMonoRegular_ranges[] = {
@@ -84,7 +84,7 @@ void SDL2::UnhookWindow()
 {
 	*swapWindowJumpAddress = oSwapWindow;
 
-	SDL_GL_DeleteContext(Antario_context);
+	SDL_GL_DeleteContext(pAste_context);
 }
 
 int SDL2::PollEvent(SDL_Event* event)

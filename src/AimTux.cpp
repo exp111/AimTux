@@ -7,7 +7,7 @@
 EventListener* eventListener = nullptr;
 
 /* called when the library is loading */
-int __attribute__((constructor)) AntarioInit()
+int __attribute__((constructor)) pAsteInit()
 {
 	Interfaces::FindInterfaces();
 	Interfaces::DumpInterfaces();
@@ -102,14 +102,14 @@ int __attribute__((constructor)) AntarioInit()
 	return 0;
 }
 
-void __attribute__((destructor)) AntarioShutdown()
+void __attribute__((destructor)) pAsteShutdown()
 {
 	cvar->FindVar("cl_mouseenable")->SetValue(1);
 
 	SDL2::UnhookWindow();
 	SDL2::UnhookPollEvent();
 
-	NoSmoke::AntarioShutdown();
+	NoSmoke::pAsteShutdown();
 
 	clientVMT->ReleaseVMT();
 	panelVMT->ReleaseVMT();

@@ -20,7 +20,7 @@ input="$(
 sudo gdb -n -q -batch \
   -ex "attach $csgo_pid" \
   -ex "set \$dlopen = (void*(*)(char*, int)) dlopen" \
-  -ex "call \$dlopen(\"$(pwd)/libAntario.so\", 1)" \
+  -ex "call \$dlopen(\"$(pwd)/libpAste.so\", 1)" \
   -ex "detach" \
   -ex "quit"
 )"

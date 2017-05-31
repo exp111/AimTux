@@ -29,7 +29,7 @@ void NoSmoke::FrameStageNotify(ClientFrameStage_t stage)
 	}
 }
 
-void NoSmoke::AntarioShutdown()
+void NoSmoke::pAsteShutdown()
 {
 	for (auto material_name : smoke_materials)
 	{
