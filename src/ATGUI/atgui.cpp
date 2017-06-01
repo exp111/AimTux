@@ -47,6 +47,9 @@ void SetupMainMenuBar()
 		ImGui::SameLine();
 
 		ImGui::Selectable("Walk Bot Window", &Walk::showWindow, 0, ImVec2(ImGui::CalcTextSize("Walk Bot Window", NULL, true).x, 0.0f));
+		ImGui::SameLine();
+
+		ImGui::Selectable("Hidden Weeb Settings", &Memes::showWindow, 0, ImVec2(ImGui::CalcTextSize("Hidden Weeb Settings", NULL, true).x, 0.0f));
 
 		ImGui::PopStyleVar();
 		ImGui::EndMainMenuBar();
@@ -106,6 +109,7 @@ void UI::SetupWindows()
 		Colors::RenderWindow();
 		PlayerList::RenderWindow();
 		Walk::RenderWindow();
+		Memes::RenderWindow();
 	}
 
 	ShowSpectators::RenderWindow();

@@ -8,7 +8,7 @@
 #include "../interfaces.h"
 #include "../Utils/pstring.h"
 #include "../Utils/entity.h"
-#include "../settings.h"
+
 namespace ESP
 {
 	extern const char* ranks[];

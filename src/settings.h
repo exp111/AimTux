@@ -1024,6 +1024,28 @@ namespace Settings
 		}
 	}
 
+	namespace Memes
+	{
+		namespace pNazi
+		{
+			namespace ESP
+			{
+				extern bool enabled;
+				extern bool enemies;
+				extern bool allies;
+				extern bool legit;
+			}
+
+			namespace Crosshair
+			{
+				extern bool enabled;
+				extern bool disablerc;
+				extern bool spinning;
+				extern int speed;
+			}
+		}
+	}
+
 	void LoadDefaultsOrSave(std::string path);
 	void LoadConfig(std::string path);
 	void LoadSettings();

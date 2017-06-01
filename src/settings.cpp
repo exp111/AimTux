@@ -520,6 +520,15 @@ void Settings::LoadDefaultsOrSave(std::string path)
 	settings["AutoKnife"]["Filters"]["allies"] = Settings::AutoKnife::Filters::allies;
 	settings["AutoKnife"]["onKey"] = Settings::AutoKnife::onKey;
 
+	settings["Memes"]["pNazi"]["ESP"]["enabled"] = Settings::Memes::pNazi::ESP::enabled;
+	settings["Memes"]["pNazi"]["ESP"]["enemies"] = Settings::Memes::pNazi::ESP::enemies;
+	settings["Memes"]["pNazi"]["ESP"]["allies"] = Settings::Memes::pNazi::ESP::allies;
+	settings["Memes"]["pNazi"]["ESP"]["legit"] = Settings::Memes::pNazi::ESP::legit;
+	settings["Memes"]["pNazi"]["Crosshair"]["enabled"] = Settings::Memes::pNazi::Crosshair::enabled;
+	settings["Memes"]["pNazi"]["Crosshair"]["disablerc"] = Settings::Memes::pNazi::Crosshair::disablerc;
+	settings["Memes"]["pNazi"]["Crosshair"]["spinning"] = Settings::Memes::pNazi::Crosshair::spinning;
+	settings["Memes"]["pNazi"]["Crosshair"]["speed"] = Settings::Memes::pNazi::Crosshair::speed;
+
 	std::ofstream(path) << styledWriter.write(settings);
 }
 
@@ -998,6 +1007,15 @@ void Settings::LoadConfig(std::string path)
 	GetVal(settings["AutoKnife"]["Filters"]["enemies"], &Settings::AutoKnife::Filters::enemies);
 	GetVal(settings["AutoKnife"]["Filters"]["allies"], &Settings::AutoKnife::Filters::allies);
 	GetVal(settings["AutoKnife"]["onKey"], &Settings::AutoKnife::onKey);
+
+	GetVal(settings["Memes"]["pNazi"]["ESP"]["enabled"], &Settings::Memes::pNazi::ESP::enabled);
+	GetVal(settings["Memes"]["pNazi"]["ESP"]["enemies"], &Settings::Memes::pNazi::ESP::enemies);
+	GetVal(settings["Memes"]["pNazi"]["ESP"]["allies"], &Settings::Memes::pNazi::ESP::allies);
+	GetVal(settings["Memes"]["pNazi"]["ESP"]["legit"], &Settings::Memes::pNazi::ESP::legit);
+	GetVal(settings["Memes"]["pNazi"]["Crosshair"]["enabled"], &Settings::Memes::pNazi::Crosshair::enabled);
+	GetVal(settings["Memes"]["pNazi"]["Crosshair"]["disablerc"], &Settings::Memes::pNazi::Crosshair::disablerc);
+	GetVal(settings["Memes"]["pNazi"]["Crosshair"]["spinning"], &Settings::Memes::pNazi::Crosshair::spinning);
+	GetVal(settings["Memes"]["pNazi"]["Crosshair"]["speed"], &Settings::Memes::pNazi::Crosshair::speed);
 }
 
 void Settings::LoadSettings()

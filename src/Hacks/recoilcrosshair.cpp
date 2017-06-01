@@ -11,6 +11,9 @@ void Recoilcrosshair::Paint()
 	if (!Settings::Recoilcrosshair::enabled)
 		return;
 
+	if (Settings::Memes::pNazi::Crosshair::enabled && Settings::Memes::pNazi::Crosshair::disablerc)
+		return;
+
 	if (!engine->IsInGame())
 		return;
 

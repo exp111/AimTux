@@ -39,3 +39,4 @@
 #include "view.h"
 #include "walkbot.h"
 #include "autoknife.h"
+#include "pnazi.h"
