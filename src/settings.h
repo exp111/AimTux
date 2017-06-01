@@ -331,6 +331,8 @@ namespace Settings
 		extern ColorVar bodyColor;
 		extern ColorVar fontColor;
 
+		extern int Theme;
+
 		namespace Fonts
 		{
 			namespace ESP

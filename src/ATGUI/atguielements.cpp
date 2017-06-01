@@ -1,5 +1,7 @@
 #include "atgui.h"
 
+int Settings::UI::Theme = 0;
+
 void UI::KeyBindButton(ButtonCode_t* key)
 {
 	const char* text = inputSystem->ButtonCodeToString(*key);
@@ -226,29 +228,58 @@ void UI::SetupColors()
 	ImVec4 frameBgColor = ImVec4(Settings::UI::bodyColor.Color().Value.x, Settings::UI::bodyColor.Color().Value.y, Settings::UI::bodyColor.Color().Value.z, Settings::UI::bodyColor.Color().Value.w + .1f);
 	ImVec4 tooltipBgColor = ImVec4(Settings::UI::bodyColor.Color().Value.x, Settings::UI::bodyColor.Color().Value.y, Settings::UI::bodyColor.Color().Value.z, Settings::UI::bodyColor.Color().Value.w + .05f);
 
-	style.Alpha = 1.0f;
-	style.WindowPadding = ImVec2(8, 8);
-	style.WindowMinSize = ImVec2(32, 32);
-	style.WindowRounding = 15.0f;
-	style.WindowTitleAlign = ImVec2(0.5f, 0.5f);
-	style.ChildWindowRounding = 3.0f;
-	style.FramePadding = ImVec2(4, 3);
-	style.FrameRounding = 3.0f;
-	style.ItemSpacing = ImVec2(8, 4);
-	style.ItemInnerSpacing = ImVec2(4, 4);
-	style.TouchExtraPadding = ImVec2(0, 0);
-	style.IndentSpacing = 21.0f;
-	style.ColumnsMinSpacing = 3.0f;
-	style.ScrollbarSize = 12.0f;
-	style.ScrollbarRounding = 15.0f;
-	style.GrabMinSize = 20.0f;
-	style.GrabRounding = 1.0f;
-	style.ButtonTextAlign = ImVec2(0.5f, 0.5f);
-	style.DisplayWindowPadding = ImVec2(22, 22);
-	style.DisplaySafeAreaPadding = ImVec2(4, 4);
-	style.AntiAliasedLines = true;
-	style.AntiAliasedShapes = true;
-	style.CurveTessellationTol = 1.25f;
+	if (Settings::UI::Theme == 1)
+	{
+		style.Alpha = 1.0f;
+		style.WindowPadding = ImVec2(8, 8);
+		style.WindowMinSize = ImVec2(32, 32);
+		style.WindowTitleAlign = ImVec2(0.5f, 0.5f);
+		style.ChildWindowRounding = 0.0f;
+		style.WindowRounding = 0.f;
+		style.FramePadding = ImVec2( 4, 1 );
+		style.FrameRounding = 0.0f;
+		style.ItemSpacing = ImVec2(8, 4);
+		style.ItemInnerSpacing = ImVec2(4, 4);
+		style.TouchExtraPadding = ImVec2(0, 0);
+		style.IndentSpacing = 21.0f;
+		style.ColumnsMinSpacing = 3.0f;
+		style.ScrollbarSize = 10.f;
+		style.ScrollbarRounding = 0.f;
+		style.GrabMinSize = 5.0f;
+		style.GrabRounding = 0.0f;
+		style.ButtonTextAlign = ImVec2(0.5f, 0.5f);
+		style.DisplayWindowPadding = ImVec2(22, 22);
+		style.DisplaySafeAreaPadding = ImVec2(4, 4);
+		style.AntiAliasedLines = true;
+		style.AntiAliasedShapes = true;
+		style.CurveTessellationTol = 1.25f;
+	}
+	else
+	{
+		style.Alpha = 1.0f;
+		style.WindowPadding = ImVec2(8, 8);
+		style.WindowMinSize = ImVec2(32, 32);
+		style.WindowRounding = 15.0f;
+		style.WindowTitleAlign = ImVec2(0.5f, 0.5f);
+		style.ChildWindowRounding = 3.0f;
+		style.FramePadding = ImVec2(4, 3);
+		style.FrameRounding = 3.0f;
+		style.ItemSpacing = ImVec2(8, 4);
+		style.ItemInnerSpacing = ImVec2(4, 4);
+		style.TouchExtraPadding = ImVec2(0, 0);
+		style.IndentSpacing = 21.0f;
+		style.ColumnsMinSpacing = 3.0f;
+		style.ScrollbarSize = 12.0f;
+		style.ScrollbarRounding = 15.0f;
+		style.GrabMinSize = 20.0f;
+		style.GrabRounding = 1.0f;
+		style.ButtonTextAlign = ImVec2(0.5f, 0.5f);
+		style.DisplayWindowPadding = ImVec2(22, 22);
+		style.DisplaySafeAreaPadding = ImVec2(4, 4);
+		style.AntiAliasedLines = true;
+		style.AntiAliasedShapes = true;
+		style.CurveTessellationTol = 1.25f;
+	}
 
 	style.Colors[ImGuiCol_Text] = Settings::UI::fontColor.Color();
 	style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.24f, 0.23f, 0.29f, 1.00f);

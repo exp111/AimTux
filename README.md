@@ -18,6 +18,7 @@ If you find a bug or want to add something just make a pull request.
 
 **From Antario:**
 - Really bad memes (Found in an **a e s t h e t i c** new menu in the main menu bar)
+- Different 'Menu Themes'
 - Fixed some bugs
 - Slightly different menu (Can still change in the future)
 - Still maintained

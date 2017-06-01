@@ -10,6 +10,7 @@
 #include "imgui.h"
 #include "Windows/skinmodelchanger.h"
 #include "Windows/configs.h"
+#include "Windows/themes.h"
 #include "Windows/playerlist.h"
 #include "Windows/colors.h"
 #include "Windows/main.h"

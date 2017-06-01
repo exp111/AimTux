@@ -37,6 +37,9 @@ void SetupMainMenuBar()
 		ImGui::Selectable("Config Window", &Configs::showWindow, 0, ImVec2(ImGui::CalcTextSize("Config Window", NULL, true).x, 0.0f));
 		ImGui::SameLine();
 
+		ImGui::Selectable("Theme Window", &Themes::showWindow, 0, ImVec2(ImGui::CalcTextSize("Theme Window", NULL, true).x, 0.0f));
+		ImGui::SameLine();
+
 		ImGui::Selectable("Spectators Window", &Settings::ShowSpectators::enabled, 0, ImVec2(ImGui::CalcTextSize("Spectators Window", NULL, true).x, 0.0f));
 		ImGui::SameLine();
 
@@ -107,6 +110,7 @@ void UI::SetupWindows()
 
 		Configs::RenderWindow();
 		Colors::RenderWindow();
+		Themes::RenderWindow();
 		PlayerList::RenderWindow();
 		Walk::RenderWindow();
 		Memes::RenderWindow();

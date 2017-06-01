@@ -139,6 +139,8 @@ void Settings::LoadDefaultsOrSave(std::string path)
 	settings["UI"]["Fonts"]["ESP"]["size"] = Settings::UI::Fonts::ESP::size;
 	settings["UI"]["Fonts"]["ESP"]["flags"] = Settings::UI::Fonts::ESP::flags;
 
+	settings["UI"]["Theme"] = Settings::UI::Theme;
+
 	for (auto i : Settings::Aimbot::weapons)
 	{
 		// TODO this is kind of a hack and i'm too tired to find a better way to do this
@@ -550,6 +552,8 @@ void Settings::LoadConfig(std::string path)
 	GetVal(settings["UI"]["Fonts"]["ESP"]["family"], &Settings::UI::Fonts::ESP::family);
 	GetVal(settings["UI"]["Fonts"]["ESP"]["size"], &Settings::UI::Fonts::ESP::size);
 	GetVal(settings["UI"]["Fonts"]["ESP"]["flags"], &Settings::UI::Fonts::ESP::flags);
+
+	GetVal(settings["UI"]["Theme"], &Settings::UI::Theme);
 
 	Fonts::SetupFonts();
 

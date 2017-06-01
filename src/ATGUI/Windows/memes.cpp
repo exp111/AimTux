@@ -2,7 +2,6 @@
 
 bool Memes::showWindow = false;
 
-
 void Memes::RenderWindow()
 {
 	if(!Memes::showWindow)
