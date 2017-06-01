@@ -9,19 +9,21 @@ If you find a bug or want to add something just make a pull request.
 
 ### What is different?
 From AimTux:
--New Aimbot Features (Closest Bone, Adaptive FOV, Hitscan (still WIP), Velocity Prediction)
--Legit mode Toggle
--Walkbot
--Knife/Zeus Bot
--Custom Watermark
--Bugfixes & Updates
+
+- New Aimbot Features (Closest Bone, Adaptive FOV, Hitscan (still WIP), Velocity Prediction)
+- Legit mode Toggle
+- Walkbot
+- Knife/Zeus Bot
+- Custom Watermark
+- Bugfixes & Updates
 
 From Antario:
--Really bad memes (Found in an a e s t h e t i c new menu in the main menu bar)
--Fixed some bugs
--Slightly different menu (Can still change in the future)
--Still maintained
--New features when I have an idea
+
+- Really bad memes (Found in an a e s t h e t i c new menu in the main menu bar)
+- Fixed some bugs
+- Slightly different menu (Can still change in the future)
+- Still maintained
+- New features when I have an idea
 
 ## Compiling
 
