@@ -254,6 +254,32 @@ void UI::SetupColors()
 		style.AntiAliasedShapes = true;
 		style.CurveTessellationTol = 1.25f;
 	}
+	else if (Settings::UI::Theme == 2)
+	{
+		style.Alpha = 1.0f;
+		style.WindowPadding = ImVec2(8, 8);
+		style.WindowMinSize = ImVec2(32, 32);
+		style.WindowRounding = 15.0f;
+		style.WindowTitleAlign = ImVec2(0.5f, 0.5f);
+		style.ChildWindowRounding = 20.0f;
+		style.FramePadding = ImVec2(4, 3);
+		style.FrameRounding = 4.0f;
+		style.ItemSpacing = ImVec2(8, 4);
+		style.ItemInnerSpacing = ImVec2(4, 4);
+		style.TouchExtraPadding = ImVec2(0, 0);
+		style.IndentSpacing = 21.0f;
+		style.ColumnsMinSpacing = 3.0f;
+		style.ScrollbarSize = 12.0f;
+		style.ScrollbarRounding = 15.0f;
+		style.GrabMinSize = 5.0f;
+		style.GrabRounding = 15.0f;
+		style.ButtonTextAlign = ImVec2(0.5f, 0.5f);
+		style.DisplayWindowPadding = ImVec2(22, 22);
+		style.DisplaySafeAreaPadding = ImVec2(4, 4);
+		style.AntiAliasedLines = true;
+		style.AntiAliasedShapes = true;
+		style.CurveTessellationTol = 1.25f;
+	}
 	else
 	{
 		style.Alpha = 1.0f;

@@ -2,7 +2,7 @@
 
 bool Themes::showWindow = false;
 
-const char* ThemesList[] = { "pAste", "TGF" };
+const char* ThemesList[] = { "pAste", "AimTux", "Antario" };
 
 void Themes::RenderWindow()
 {
