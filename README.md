@@ -1,4 +1,4 @@
-##DETECTED
+## DETECTED
 
 Since 06.06.2017 all Aimtux forks and Aimtux itself are detected. I wouldnt recommend using this as it brings some risks (untrusted bans).
 
